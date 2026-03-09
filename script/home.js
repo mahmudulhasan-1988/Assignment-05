@@ -95,6 +95,22 @@ closedBtn.addEventListener("click", function(){
 });
 
 
+const loadLevelWord = (id) => {
+    manageSpinner(true);
+    // console.log(id);
+    const url = `https://phi-lab-server.vercel.app/api/v1/lab/issue/{id}`;
+    fetch(url)
+    .then((res) => res.json()) 
+    .then((data) => {
+        removeActive(); // remove all active class
+        const clickBtn = document.getElementById(`lesson-btn-${id}`);
+        // console.log(clickBtn);
+        clickBtn.classList.add("active");
+        displayLevelWord(data.data)
+    });
+};
+
+
 
 
 
