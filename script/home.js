@@ -55,6 +55,44 @@ async function loadCategories() {
 loadCategories();
 
 
+// const buttons = document.querySelectorAll(".btn");
+// buttons.forEach(button => { 
+//     button.addEventListener("click", () => {
+//     buttons.forEach(btn => { 
+//         btn.classList.remove("btn-primary"); });
+//         button.classList.add("btn-primary"); 
+//     }); 
+// });
+
+
+
+
+
+
+const allBtn = document.getElementById("all");
+const openBtn = document.getElementById("open");
+const closedBtn = document.getElementById("closed");
+
+function removeActive(){
+    allBtn.classList.remove("btn-active");
+    openBtn.classList.remove("btn-active");
+    closedBtn.classList.remove("btn-active");
+}
+
+allBtn.addEventListener("click", function(){
+    removeActive();
+    allBtn.classList.add("btn-active");
+});
+
+openBtn.addEventListener("click", function(){
+    removeActive();
+    openBtn.classList.add("btn-active");
+});
+
+closedBtn.addEventListener("click", function(){
+    removeActive();
+    closedBtn.classList.add("btn-active");
+});
 
 
 
