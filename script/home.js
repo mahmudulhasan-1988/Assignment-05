@@ -56,25 +56,6 @@ loadCategories();
 
 
 
-const buttons = document.querySelectorAll(".btn");
-
-function setActive(button){
-    buttons.forEach(btn => btn.classList.remove("btn-primary"));
-    button.classList.add("btn-primary");
-}
-
-document.getElementById("allBtn").onclick = function(){
-    setActive(this);
-}
-
-document.getElementById("openBtn").onclick = function(){
-    setActive(this);
-}
-
-document.getElementById("closedBtn").onclick = function(){
-    setActive(this);
-}
-
 
 
 

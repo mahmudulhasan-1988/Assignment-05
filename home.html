@@ -39,11 +39,21 @@
             onclick="switchTab('closed')">Closed</button>
         </div> -->
       
-        <div id="button" class="px-10 shadow-sm py-8 bg-base-100 space-x-5 rounded-xl">
-            <button id="allBtn" class="btn btn-primary hover:bg-primary px-10 hover:text-white">All</button>
-            <button id="openBtn" class="btn btn-primary hover:bg-primary px-10 hover:text-white">Open</button>
-            <button id="closedBtn" class="btn btn-primary hover:bg-primary px-10 hover:text-white">Closed</button>
-        </div>
+        <div class="px-10 shadow-sm py-8 bg-base-100 space-x-5 rounded-xl">
+
+          <input class="join-item btn" type="radio" name="filter" value="all" aria-label="All" checked />
+
+          <input class="join-item btn" type="radio" name="filter" value="open" aria-label="Open" />
+
+          <input class="join-item btn" type="radio" name="filter" value="closed" aria-label="Closed" />
+
+      </div>
+
+        <!-- <div id="button" class="px-10 shadow-sm py-8 bg-base-100 space-x-5 rounded-xl">
+            <button id="allBtn" class="btn btn-active  hover:bg-primary px-10 hover:text-white">All</button>
+            <button id="openBtn" class="btn btn-active  hover:bg-primary px-10 hover:text-white">Open</button>
+            <button id="closedBtn" class="btn btn-active  hover:bg-primary px-10 hover:text-white">Closed</button>
+        </div> -->
 <!-- 
         <div class="flex gap-4 border p-6 w-fit rounded-lg bg-base-200">
 
